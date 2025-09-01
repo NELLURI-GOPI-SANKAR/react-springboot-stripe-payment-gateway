@@ -8,7 +8,7 @@ export default function Payment(){
     const stripe = window.Stripe("pk_test_51RkQH7LEHMhwphQBLDB1X6QapNUdNEFqrKZhQhAGhFHmrq2gpXivHGMHaGAemOflk6UgPWbyXute7erPXnSNrC4500edOBB9mr"); // publishable key
 
     try {
-      const response = await fetch("http://localhost:8081/create-checkout-session/"+amount, {
+      const response = await fetch("https://react-sprinboot-stripe-payment-gateway.onrender.com/create-checkout-session/"+amount, {
         method: "POST",
       });
       const session = await response.json();

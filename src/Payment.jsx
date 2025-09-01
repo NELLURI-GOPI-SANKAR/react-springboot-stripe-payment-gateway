@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function payment(){
+export default function Payment(){
 
     const [amount, setAmount] = useState(0);
 
